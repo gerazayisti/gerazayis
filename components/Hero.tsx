@@ -113,12 +113,18 @@ export default function Hero() {
         {/* Photo du campus en fond plein */}
         <Image
           src="/hero_campus.jpg"
-          alt="Bâtiment de la Faculté des Sciences"
+          alt="Entrée principale de la Faculté des Sciences — Université de Yaoundé I"
           fill
           priority
-          className="object-cover object-center grayscale contrast-125"
+          className="object-cover object-center transition-transform duration-700 hover:scale-105"
           sizes="(min-width: 768px) 48vw, 100vw"
         />
+
+        {/* Badge brutaliste officiel du campus */}
+        <div className="absolute top-4 left-4 z-20 bg-[#111111]/90 text-white border border-[#111111] px-3 py-1.5 font-mono text-[11px] font-bold uppercase tracking-wider flex items-center gap-2 shadow-md">
+          <span className="w-2 h-2 bg-[#5A2CA8] inline-block"></span>
+          <span>Campus Principal · Atemengué / Ngoa-Ekellé</span>
+        </div>
 
         {/* ── Overlay : motif chevrons en "V" répétitifs ── */}
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
